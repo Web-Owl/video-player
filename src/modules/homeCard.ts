@@ -76,10 +76,10 @@ export default function createHomeCard(containerEl: HTMLElement | null) {
   function videoAct(): void {
     if (videoEl.paused) {
       videoEl.play();
-      playBtnEl.setAttribute("class", "video-hud__element video-hud__action video-hud__action-pause");
+      playBtnEl.className = "video-hud__element video-hud__action video-hud__action-pause";
     } else {
       videoEl.pause();
-      playBtnEl.setAttribute("class", "video-hud__element video-hud__action video-hud__action-play");
+      playBtnEl.className = "video-hud__element video-hud__action video-hud__action-play";
     }
 
     if (durationEl.textContent === "00:00") {

@@ -1,0 +1,17 @@
+.btn {
+  background-color: #00bba7;
+  color: white;
+  border-radius: 20px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+
+.btn:hover, .btn:active {
+  background-color: #009689;
+}

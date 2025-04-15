@@ -10,7 +10,7 @@ function getCardEl() {
 function getTiteEl(text: string) {
   const titleEl = document.createElement("h1")
   titleEl.textContent = text
-  titleEl.classList.add("main-title")
+  titleEl.classList.add("card__title")
   return titleEl
 }
 
@@ -18,7 +18,7 @@ function getTiteEl(text: string) {
 function getDescEl(text: string) {
   const descEl = document.createElement("p");
   descEl.textContent = text;
-  descEl.classList.add("desc");
+  descEl.classList.add("card__description");
 
   return descEl;
 }
@@ -61,6 +61,7 @@ function getVideoEl(): HTMLVideoElement {
   return videoEl;
 }
 
+// Получение элемента списка
 function getList(
   list: (HTMLElement | string)[] | HTMLElement | string = [],
   className: string
@@ -87,6 +88,7 @@ function getList(
   return listEl;
 }
 
+// Получение контейнера видео
 function getVideoContainerEl(): HTMLDivElement {
   const videoContainerEl = document.createElement("div");
   videoContainerEl.classList.add("video-container");
@@ -94,6 +96,7 @@ function getVideoContainerEl(): HTMLDivElement {
   return videoContainerEl;
 }
 
+// Получение панели управления
 function getVideoHudEl(): HTMLDivElement {
   const hudEl = document.createElement("div");
   hudEl.classList.add("video-hud");
@@ -101,6 +104,7 @@ function getVideoHudEl(): HTMLDivElement {
   return hudEl;
 }
 
+// Получение элемента кнопки
 function getPlayEl(): HTMLDivElement {
   const playEl = document.createElement("div");
   playEl.className = "video-hud__element video-hud__action video-hud__action-play";
@@ -108,6 +112,7 @@ function getPlayEl(): HTMLDivElement {
   return playEl;
 }
 
+// Получение элемента текущего времени
 function getCurrentTimeEl(): HTMLDivElement {
   const currentTimeEl = document.createElement("div");
   currentTimeEl.className = "video-hud__element video-hud__curr-time";
@@ -115,6 +120,7 @@ function getCurrentTimeEl(): HTMLDivElement {
   return currentTimeEl;
 }
 
+// Получение элемента прогресс бара
 function getProgressEl(): HTMLProgressElement {
   const progressEl = document.createElement("progress");
   progressEl.className = "video-hud__element video-hud__progress-bar";
@@ -124,6 +130,7 @@ function getProgressEl(): HTMLProgressElement {
   return progressEl;
 }
 
+// Получение элемента масксимальной длительности
 function getDurationEl(): HTMLDivElement {
   const durationEl = document.createElement("div");
   durationEl.className = "video-hud__element video-hud__duration";
@@ -131,6 +138,7 @@ function getDurationEl(): HTMLDivElement {
   return durationEl;
 }
 
+// Получение элемента фулл скрина
 function getFullscreenBtnEl(): HTMLButtonElement {
   const btn = document.createElement("button");
   btn.className = "video-hud__element video-hud__action video-hud__action-fullscreen";
@@ -142,6 +150,8 @@ function getFullscreenBtnEl(): HTMLButtonElement {
   return btn;
 }
 
+
+// Получение элемента разделителя
 function getSeparatorEl(): HTMLSpanElement {
   const spanEl = document.createElement("span");
   spanEl.className = "video-hud__element video-hud__separator"
@@ -150,6 +160,7 @@ function getSeparatorEl(): HTMLSpanElement {
   return spanEl;
 }
 
+// Получение элемента обёртки для видео
 function getVideoWrapEl(): HTMLDivElement {
   const videoWrapEl = document.createElement("div");
   videoWrapEl.classList.add("card__wrapper");
@@ -157,6 +168,7 @@ function getVideoWrapEl(): HTMLDivElement {
   return videoWrapEl;
 }
 
+// Получение контейнера для информации
 function getInfoContainerEl(): HTMLDivElement {
   const infoContainerEl = document.createElement("div");
   infoContainerEl.classList.add("video-info");
@@ -164,6 +176,7 @@ function getInfoContainerEl(): HTMLDivElement {
   return infoContainerEl;
 }
 
+// Получение элемента карточки
 function getCardOptionEl(): HTMLDivElement {
   const spanEl = document.createElement("div");
   spanEl.classList.add("card-option");
@@ -171,6 +184,7 @@ function getCardOptionEl(): HTMLDivElement {
   return spanEl;
 }
 
+// Получение элемента управления
 function getQualityContainerEl(): HTMLDivElement {
   const qualityContainerEl = document.createElement("div");
   qualityContainerEl.className = "video-hud__element video-hud__quality";
@@ -178,6 +192,7 @@ function getQualityContainerEl(): HTMLDivElement {
   return qualityContainerEl;
 }
 
+// Получение элемента управления качества
 function getQualityEl(): HTMLSpanElement {
   const qualityEl = document.createElement("span");
   qualityEl.classList.add("video-hud__quality-note");

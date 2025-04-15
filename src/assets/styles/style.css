@@ -1,0 +1,17 @@
+/* Global */
+/* ------------------------------------ */
+@import "./global/reboot.css";
+@import "./global/normalize.css";
+
+/* Blocks */
+/* ------------------------------------ */
+@import "./blocks/app.css";
+@import "./blocks/card.css";
+@import "./blocks/btn.css";
+@import "./blocks/center-wrap.css";
+@import "./blocks/intro-spinner.css";
+@import "./blocks/video-player.css";
+@import "./blocks/video-container.css";
+@import "./blocks/video-hud.css";
+@import "./blocks/video-info.css";
+@import "./blocks/quality-list.css";

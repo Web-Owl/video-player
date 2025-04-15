@@ -1,0 +1,32 @@
+.card {
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.card--flexed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card__title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card__description {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 28px;
+}

@@ -1,0 +1,11 @@
+.center-wrap {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.center-wrap .card__title,
+.center-wrap .card__description {
+  margin: 0;
+}

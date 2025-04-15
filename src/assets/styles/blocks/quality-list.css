@@ -1,0 +1,21 @@
+.quality-list {
+  background-color: #000;
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+}
+
+.quality-list.active {
+  opacity: 1;
+  pointer-events: all;
+}

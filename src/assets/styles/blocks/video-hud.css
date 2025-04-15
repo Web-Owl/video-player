@@ -1,0 +1,51 @@
+
+.video-hud {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  margin:0;
+}
+.video-hud__element {
+  cursor:pointer;
+  display:inline-block;
+  vertical-align:middle;
+}
+.video-hud__action {
+  width:30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+}
+.video-hud__action-play {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 30px solid #fff;
+}
+
+.video-hud__progress-bar {
+  width: 100%;
+}
+
+.video-hud__action-pause {
+  background: #fff;
+  flex-shrink: 0;
+}
+
+.video-hud__action-fullscreen {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  flex-shrink: 0;
+  padding: 0;
+}
+
+.video-hud__quality {
+  position: relative;
+}

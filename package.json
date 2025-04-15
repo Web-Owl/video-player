@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "deploy": "sh deploy.sh"
+    "deploy": "rm -rf dist && sh deploy.sh"
   },
   "devDependencies": {
     "typescript": "~5.7.2",
