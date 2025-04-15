@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .center-wrap .card__title,
