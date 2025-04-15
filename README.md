@@ -2,8 +2,6 @@
 
 Простой видеоплеер на базе HLS.js, реализованный с использованием TypeScript и Vite.
 
-
-
 ## О проекте
 
 - Используется Vite для быстрой сборки и разработки.
@@ -15,20 +13,27 @@
 ## Установка и запуск
 
 1. Клонируйте репозиторий:
-git clone [video-player](https://github.com/Web-Owl/video-player.git) && cd "./video-player"
+```sh
+git clone https://github.com/Web-Owl/video-player.git && cd "./video-player"
+```
 
 2. Установите зависимости:
+```sh
 npm install
+```
 
 3. Запустите локальный сервер разработки:
+```sh
 npm run dev
+```
 
 4. Откройте в браузере адрес, указанный в консоли (обычно http://localhost:5173).
-
 
 ## Сборка для продакшена
 
 Для сборки проекта выполните:
+```sh
 npm run build
+```
 
 Собранные файлы будут в папке `dist`.
